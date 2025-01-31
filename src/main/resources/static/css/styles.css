@@ -1,0 +1,58 @@
+.segmented-control {
+    background-color: rgba(118, 118, 128, 0.12);
+    border-radius: 8px;
+    padding: 2px;
+    display: inline-flex;
+    position: relative;
+}
+
+.segmented-control input[type="radio"] {
+    display: none;
+}
+
+.segmented-control label {
+    padding: 7px 16px;
+    margin: 0;
+    cursor: pointer;
+    position: relative;
+    border-radius: 6px;
+    color: #000;
+    transition: all 0.2s ease;
+    z-index: 1;
+    flex: 1;
+    text-align: center;
+    min-width: 100px;
+    align-content: center;
+}
+
+.segmented-control input[type="radio"]:checked + label {
+    color: #000;
+    background-color: #34A7E8;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.fieldset-reset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.legend-reset {
+    float: none;
+    width: auto;
+    padding: 0;
+    margin-bottom: 8px;
+}
+
+@media (max-width: 576px) {
+    .segmented-control {
+        flex-direction: column;
+        width: 100%;
+        max-width: 30%;
+    }
+
+    .segmented-control label {
+        width: 100%;
+        text-align: left;
+    }
+}
