@@ -1,5 +1,7 @@
 # Dolphins Swim Academy API
 
+### [Live Demo](http://161.35.238.36:8080/)
+
 ## Project Description
 This is a REST API for managing a swim academy's class sessions and student registrations. The application handles class schedules, student enrollment, and session management.
 
